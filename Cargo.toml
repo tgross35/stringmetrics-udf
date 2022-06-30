@@ -1,0 +1,14 @@
+[package]
+name = "stringmetrics-udf"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "stringmetrics_udf"
+crate-type = ["cdylib"]      # Creates dynamic lib
+
+[dependencies]
+stringmetrics
+libc = "0.2"
